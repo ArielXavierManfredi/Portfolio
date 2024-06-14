@@ -1,0 +1,153 @@
+/* Reset some default styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+    /* background-color: #1a1a1a; */
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Style other sections */
+section {
+    color: #fff;
+    background-color: #4A68ED;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.35);
+    font-size: larger;
+    border-radius: 20px;
+}
+
+/* Animate skills list items */
+ul li {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.3s, transform 0.3s;
+    /* animation: diretaParaEsquerda 1s linear 0s 1 normal none; */
+    /* animation: bounceInRight 1s linear 0s 1 normal none; */
+    /* animation: scaleToRight 1s linear 0s 1 normal forwards; */
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Apply different delays to each li */
+ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+ul li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 1.0s;
+}
+
+ul li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+ul li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+ul li:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+ul li:nth-child(7) {
+    animation-delay: 3s;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+    font-weight: bold;
+}
+
+footer {
+    bottom: 0;
+}
+
+.icon {
+    width: 1.7rem;
+}
+
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for bounceInRight animation */
+@keyframes bounceInRight {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        /* transform: translateX(48px); */
+        right: 0;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateX(26px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateX(13px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateX(6.5px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateX(4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        animation-timing-function: ease-out;
+        transform: translateX(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
