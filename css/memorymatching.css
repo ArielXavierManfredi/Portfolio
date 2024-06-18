@@ -1,0 +1,32 @@
+
+.memoryMatchingContainer {
+    text-align: center;
+}
+
+#memoryMatchingBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.card.flipped {
+    background-color: #ffcc00;
+}
+
+#resetButtonMemoryMatching {
+    margin-top: 20px;
+    padding: 10px 20px;
+}

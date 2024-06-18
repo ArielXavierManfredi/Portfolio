@@ -1,12 +1,37 @@
-/* Reset some default styles */
+
+body {
+    --sectionBgColor: #ffffff;
+    --sectionColor: #121212;
+    background-color: #ffffff!important;
+
+    --highlightedColor: #292929;
+    --highlightedColorTextColor: #ffffff;
+    --secondaryColor: #ffffff;
+    --secondaryColorTextColor: #121212;
+
+    --headerBgColor: #121212;
+}
+
+body.dark-mode{
+    --sectionBgColor: #121212;
+    --sectionColor: #ffffff;
+    background-color: #292929!important;
+
+    --highlightedColor: #121212;
+    --highlightedColorTextColor: #ffffff;
+    --secondaryColor: #292929;
+    --secondaryColorTextColor: #ffffff;
+}
+
+
 * {
     font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the header */
 header {
-    /* background-color: #1a1a1a; */
-    color: #fff;
+    background-color: var(--headerBgColor);
+    color: #e0e1dd;
     text-align: center;
     padding: 2rem;
     animation: fadeIn 1s ease-in-out;
@@ -14,23 +39,28 @@ header {
 
 /* Style other sections */
 section {
-    color: #fff;
-    background-color: #4A68ED;
+    background-color: var(--sectionBgColor);
+    color: var(--sectionColor);
     padding: 2rem;
     margin: 2rem;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 20px 3px rgba(61, 62, 69, 0.5);
     font-size: larger;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-/* Animate skills list items */
+section:hover {
+    transform: scale(1.01);
+    color: var(--sectionColor);
+}
+
+#contact p:hover {
+    font-weight: bold;
+}
+
 ul li {
     opacity: 1;
     transform: translateX(0px);
     transition: opacity 0.3s, transform 0.3s;
-    /* animation: diretaParaEsquerda 1s linear 0s 1 normal none; */
-    /* animation: bounceInRight 1s linear 0s 1 normal none; */
-    /* animation: scaleToRight 1s linear 0s 1 normal forwards; */
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
@@ -68,12 +98,42 @@ ul li:hover {
     font-weight: bold;
 }
 
-footer {
-    bottom: 0;
-}
-
 .icon {
     width: 1.7rem;
+}
+
+header i{
+    text-decoration: none;
+    color: #fff;
+}
+
+section a{
+    color: var(--sectionColor);
+    text-decoration: none;
+    i{
+        text-decoration: none;
+        color: var(--sectionColor);
+    }
+}
+
+footer {
+    bottom: 0;
+    color: var(--sectionColor);
+}
+
+footer i{
+    text-decoration: none;
+    color: var(--sectionColor);
+}
+
+.accordion-button{
+    background-color: var(--highlightedColor)!important;
+    color: var(--highlightedColorTextColor)!important;
+}
+
+.accordion-body{
+    background-color: var(--secondaryColor);
+    color: var(--secondaryColorTextColor);
 }
 
 

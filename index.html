@@ -6,32 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ariel Xavier Manfredi - Portfolio</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/ttt.css">
+    <link rel="stylesheet" href="/css/memorymatching.css">
+
     <link rel="icon" href="/img/cartoon-avatar.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+
     <header>
         <h1>Ariel Xavier Manfredi</h1>
-        <p>Web Developer</p>
+        <b>Web Developer</b>
+        <div class="vr mx-1"></div>
+        <a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+        <div class="vr mx-1"></div>
+        <a href="https://github.com/ArielManfredi" target="_blank"><i class="bi bi-github"></i></a>
+        <div class="vr mx-1"></div>
+        <a href="https://discord.com/users/480883631754051584" target="_blank"><i class="bi bi-discord"></i></a>
+        <div class="vr mx-1"></div>
+        <div class="d-flex justify-content-end">
+            <div class="form-check form-switch">
+                <label class="form-check-label text-light" for="toggleDarkMode"><i class="bi bi-moon-fill"></i></label>
+                <input class="form-check-input" type="checkbox" role="switch" id="toggleDarkMode"
+                    onchange="trocarTema()">
+            </div>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>----Write a brief introduction about yourself here.-------</p>
+        <p>Passionate about technology since little, I'm a beginner web developer with 2 years of experience.</p>
+        <p>In my free time I like to play games, play the guitar, watch series and anime.</p>
     </section>
 
-    <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-        </div>
-    </div>
+    <section id="formation">
+        <h2>Graduation</h2>
+        <p>Higher Education: Information Technology Management - FATEC Catanduva - Catanduva/SP - Brazil</p>
+        <p>High School Integrated with Technician: Computer Technician - ETEC Elias Nechar - Catanduva/SP - Brazil</p>
+    </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -53,29 +69,117 @@
         </ul>
     </section>
 
+    <section id="minigames">
+        <h2>Mini-Games</h2>
+        <div class="accordion" id="accordionParent">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTicTacToe" aria-expanded="false" aria-controls="collapseTicTacToe">
+                        Tic Tac Toe
+                    </button>
+                </h2>
+                <div id="collapseTicTacToe" class="accordion-collapse collapse" data-bs-parent="#accordionParent">
+                    <div class="accordion-body">
+                        <div class="tictactoeContainer">
+                            <h1>Tic Tac Toe</h1>
+                            <div id="tictactoeBoardContainer">
+                                <div id="tictactoeBoard">
+                                    <div class="cell" data-index="0"></div>
+                                    <div class="cell" data-index="1"></div>
+                                    <div class="cell" data-index="2"></div>
+                                    <div class="cell" data-index="3"></div>
+                                    <div class="cell" data-index="4"></div>
+                                    <div class="cell" data-index="5"></div>
+                                    <div class="cell" data-index="6"></div>
+                                    <div class="cell" data-index="7"></div>
+                                    <div class="cell" data-index="8"></div>
+                                </div>
+                            </div>
+                            <div id="messageTicTacToe"></div>
+                            <button id="resetButtonTicTacToe" class="btn btn-outline-primary">Reset Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseMemoryMatching" aria-expanded="false"
+                        aria-controls="collapseMemoryMatching">
+                        Memory Matching
+                    </button>
+                </h2>
+                <div id="collapseMemoryMatching" class="accordion-collapse collapse" data-bs-parent="#accordionParent">
+                    <div class="accordion-body">
+                        <div class="memoryMatchingContainer">
+                            <h1>Memory Matching</h1>
+                            <div id="memoryMatchingBoardContainer">
+                                <div id="memoryMatchingBoard"></div>
+                            </div>
+                            <div id="messageMemoryMatching"></div>
+                            <button id="resetButtonMemoryMatching" class="btn btn-outline-primary">Reset Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <b>ariel.xavier.manfredi@gmail.com</b></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile"><i class="bi bi-linkedin"></i></a></p>
-        <p>Github: <a href="https://github.com/ArielManfredi"><i class="bi bi-github"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank">LinkedIn: <i
+                    class="bi bi-linkedin"></i></a></p>
+        <p><a href="https://github.com/ArielManfredi" target="_blank">Github <i class="bi bi-github"></i></a></p>
+        <p><a href="https://discord.com/users/480883631754051584" target="_blank">Discord: <i
+                    class="bi bi-discord"></i></a></p>
     </section>
 
     <footer>
         <center>
-            <p>© 2024 Ariel Xavier Manfredi</p>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-github"></i>
+            <small>© 2024 Ariel Xavier Manfredi</small>
+            <div class="vr mx-1"></div>
+            <a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+            <div class="vr mx-1"></div>
+            <a href="https://github.com/ArielManfredi" target="_blank"><i class="bi bi-github"></i></a>
+            <div class="vr mx-1"></div>
+            <a href="https://discord.com/users/480883631754051584" target="_blank"><i class="bi bi-discord"></i></a>
         </center>
     </footer>
 
+
+    <!-- Imports -->
     <script src="/js/scripts.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/js/ttt.js"></script>
+    <script src="/js/memorymatching.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        //Função que é ativa quando a tela carrega
+        $(document).ready(function () {
+
+        if (localStorage.getItem("theme") == "dark") {
+            $('#toggleDarkMode').prop('checked', true);
+            var body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+        }
+        });
+
+
+        function trocarTema() {
+        var body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', $('#toggleDarkMode').is(':checked') ? 'dark' : 'light');
+        }
+    </script>
 </body>
 
 </html>
