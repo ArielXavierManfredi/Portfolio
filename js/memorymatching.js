@@ -1,4 +1,4 @@
-// script.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const gameBoard = document.getElementById('memoryMatchingBoard');
     const resetButton = document.getElementById('resetButtonMemoryMatching');

@@ -136,6 +136,12 @@ footer i{
     color: var(--secondaryColorTextColor);
 }
 
+/* Social Media Icons Hover efx */
+.bi-linkedin:hover {color: #0A66C2;}
+.bi-github:hover {color: #E6EDF3;}
+.bi-discord:hover {color: #535FEE;}
+
+
 
 @keyframes tracking-in-expand {
     0% {
