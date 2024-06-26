@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards.push({ index, value });
 
             if (flippedCards.length === 2) {
-                setTimeout(checkMatch, 500);
+                setTimeout(checkMatch, 50);
             }
         }
     }
@@ -41,12 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (firstCard.value === secondCard.value) {
             matchedCards.push(firstCard.index, secondCard.index);
         } else {
+            console.log("firstCard.value: "+firstCard.value);
+            console.log("secondCard.value: "+secondCard.value);
             document.querySelector(`.card[data-index='${firstCard.index}']`).classList.remove('flipped');
             document.querySelector(`.card[data-index='${secondCard.index}']`).classList.remove('flipped');
             document.querySelector(`.card[data-index='${firstCard.index}']`).textContent = '';
             document.querySelector(`.card[data-index='${secondCard.index}']`).textContent = '';
         }
         flippedCards = [];
+
+        if (matchedCards.length == 16) {
+            $('#messageMemoryMatching').text("You Won!");
+        }
     }
 
     function resetGame() {
