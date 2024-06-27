@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards.push({ index, value });
 
             if (flippedCards.length === 2) {
-                setTimeout(checkMatch, 50);
+                setTimeout(checkMatch, 300);
             }
         }
     }
@@ -38,15 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkMatch() {
         const [firstCard, secondCard] = flippedCards;
 
-        if (firstCard.value === secondCard.value) {
-            matchedCards.push(firstCard.index, secondCard.index);
-        } else {
-            console.log("firstCard.value: "+firstCard.value);
-            console.log("secondCard.value: "+secondCard.value);
-            document.querySelector(`.card[data-index='${firstCard.index}']`).classList.remove('flipped');
-            document.querySelector(`.card[data-index='${secondCard.index}']`).classList.remove('flipped');
-            document.querySelector(`.card[data-index='${firstCard.index}']`).textContent = '';
-            document.querySelector(`.card[data-index='${secondCard.index}']`).textContent = '';
+        if (firstCard.value && secondCard.value) {
+            if (firstCard.value === secondCard.value) {
+                matchedCards.push(firstCard.index, secondCard.index);
+            } else {
+                console.log("firstCard.value: "+firstCard.value);
+                console.log("secondCard.value: "+secondCard.value);
+                document.querySelector(`.card[data-index='${firstCard.index}']`).classList.remove('flipped');
+                document.querySelector(`.card[data-index='${secondCard.index}']`).classList.remove('flipped');
+                document.querySelector(`.card[data-index='${firstCard.index}']`).textContent = '';
+                document.querySelector(`.card[data-index='${secondCard.index}']`).textContent = '';
+            }
         }
         flippedCards = [];
 
@@ -59,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         matchedCards = [];
         flippedCards = [];
         createBoard();
+        $('#messageMemoryMatching').text("");
     }
 
     createBoard();
