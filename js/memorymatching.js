@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.dataset.index = index;
             card.dataset.value = value;
             gameBoard.appendChild(card);
+            card.addEventListener('click', flipCard);
         });
     }
 
@@ -42,8 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (firstCard.value === secondCard.value) {
                 matchedCards.push(firstCard.index, secondCard.index);
             } else {
-                console.log("firstCard.value: "+firstCard.value);
-                console.log("secondCard.value: "+secondCard.value);
                 document.querySelector(`.card[data-index='${firstCard.index}']`).classList.remove('flipped');
                 document.querySelector(`.card[data-index='${secondCard.index}']`).classList.remove('flipped');
                 document.querySelector(`.card[data-index='${firstCard.index}']`).textContent = '';
@@ -65,6 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     createBoard();
-    gameBoard.addEventListener('click', flipCard);
     resetButton.addEventListener('click', resetGame);
 });
