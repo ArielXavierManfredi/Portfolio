@@ -16,7 +16,7 @@ h1 {
     grid-template-columns: repeat(3, 100px);
     gap: 5px;
     margin: 0 auto;
-    border: 2px solid #000;
+    border: 2px solid #121212;
     padding: 1rem;
 }
 
@@ -27,9 +27,10 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    border: 1px solid #000;
+    border: 1px solid #121212;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #f0f0f0;
+    color: #121212;
 }
 
 .cell:hover {
