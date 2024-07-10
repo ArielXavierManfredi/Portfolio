@@ -1,0 +1,7 @@
+#rockPaperScissorsBoard input:hover{
+    transform: scale(1.2);
+}
+
+.invisible{
+    visibility: hidden;
+}
