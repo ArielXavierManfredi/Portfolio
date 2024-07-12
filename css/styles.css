@@ -42,33 +42,13 @@ ul li {
 }
 
 /* Apply different delays to each li */
-ul li:nth-child(1) {
-    animation-delay: 0s;
-}
-
-ul li:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-ul li:nth-child(3) {
-    animation-delay: 1.0s;
-}
-
-ul li:nth-child(4) {
-    animation-delay: 1.5s;
-}
-
-ul li:nth-child(5) {
-    animation-delay: 2s;
-}
-
-ul li:nth-child(6) {
-    animation-delay: 2.5s;
-}
-
-ul li:nth-child(7) {
-    animation-delay: 3s;
-}
+ul li:nth-child(1) { animation-delay: 0s;}
+ul li:nth-child(2) { animation-delay: 0.5s;}
+ul li:nth-child(3) { animation-delay: 1.0s;}
+ul li:nth-child(4) { animation-delay: 1.5s;}
+ul li:nth-child(5) { animation-delay: 2s;}
+ul li:nth-child(6) { animation-delay: 2.5s;}
+ul li:nth-child(7) { animation-delay: 3s;}
 
 ul li:hover {
     transform: translateX(10px);
