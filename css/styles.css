@@ -23,7 +23,6 @@ body.dark-mode{
     --secondaryColorTextColor: #ffffff;
 }
 
-
 * {
     font-family: cursive;
 }
@@ -110,10 +109,11 @@ header i{
 section a{
     color: var(--sectionColor);
     text-decoration: none;
-    i{
-        text-decoration: none;
-        color: var(--sectionColor);
-    }
+}
+
+section a i {
+    text-decoration: none;
+    color: var(--sectionColor);
 }
 
 footer {
@@ -142,6 +142,39 @@ footer i{
 .bi-discord:hover {color: #535FEE;}
 
 
+
+/* MEDIA QUERIES FOR RESPONSIVENESS: */
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: medium;
+    }
+
+    ul li {
+        font-size: small;
+    }
+
+    .icon {
+        width: 1.2rem;
+    }
+
+    #contact p:hover {
+        font-weight: normal;
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+
+/* ANIMATIONS: */
 
 @keyframes tracking-in-expand {
     0% {

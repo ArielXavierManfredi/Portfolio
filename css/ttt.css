@@ -1,14 +1,17 @@
 .tictactoeContainer {
     text-align: center;
+    padding: 10px;
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 2rem; /* Ajusta o tamanho da fonte para dispositivos menores */
 }
 
 #tictactoeBoardContainer {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 #tictactoeBoard {
@@ -34,7 +37,7 @@ h1 {
 }
 
 .cell:hover {
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
 }
 
 #message {
@@ -44,4 +47,32 @@ h1 {
 
 #resetButton {
     margin-top: 20px;
+}
+
+
+/* Media queries para ajustar o layout em dispositivos móveis */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #tictactoeBoard {
+        grid-template-columns: repeat(3, 60px);
+        gap: 3px;
+    }
+
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    #message {
+        font-size: 1rem;
+    }
+
+    #resetButton {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }

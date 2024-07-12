@@ -1,11 +1,13 @@
 
 .memoryMatchingContainer {
     text-align: center;
+    padding: 10px;
 }
 
 #memoryMatchingBoardContainer{
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 #memoryMatchingBoard {
@@ -20,6 +22,9 @@
     min-height: 3rem;
     font-size: 2rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card.flipped {
@@ -33,4 +38,28 @@
 
 #messageMemoryMatching{
     font-size: 2rem;
+}
+
+
+/* Media queries para ajustar o layout em dispositivos móveis */
+@media (max-width: 600px) {
+    #memoryMatchingBoard {
+        grid-template-columns: repeat(4, 60px);
+        gap: 5px;
+    }
+
+    .card {
+        height: 60px;
+        min-height: 60px;
+        font-size: 1.5rem;
+    }
+
+    #messageMemoryMatching {
+        font-size: 1.5rem;
+    }
+
+    #resetButtonMemoryMatching {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
