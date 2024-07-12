@@ -52,7 +52,7 @@ h1 {
 
 /* Media queries para ajustar o layout em dispositivos móveis */
 @media (max-width: 768px) {
-    h1 {
+    #tictactoeContainer h1 {
         font-size: 1.5rem;
     }
 

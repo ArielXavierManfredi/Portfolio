@@ -42,7 +42,7 @@
 
 
 /* Media queries para ajustar o layout em dispositivos móveis */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #memoryMatchingBoard {
         grid-template-columns: repeat(4, 60px);
         gap: 5px;
