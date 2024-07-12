@@ -39,8 +39,10 @@ function getResults(userChoice){
             break;
     }
 
-    // document.getElementById("rockPaperScissorsBoard").hidden = true;
     document.getElementById("rockPaperScissorsBoard").classList.add("invisible");
+    document.getElementById("chooseOneRockPaperScissors").classList.add("invisible");
+    document.getElementById("divUserChoiceRockPaperScissors").classList.remove("invisible");
+    document.getElementById("divComputerChoiceRockPaperScissors").classList.remove("invisible");
 }
 
 
@@ -49,6 +51,10 @@ function resetGame() {
     userChoiceDisplay.innerHTML = "";
     computerChoiceDisplay.innerHTML = "";
     document.getElementById("rockPaperScissorsBoard").classList.remove("invisible");
+    document.getElementById("chooseOneRockPaperScissors").classList.remove("invisible");
+    document.getElementById("divUserChoiceRockPaperScissors").classList.add("invisible");
+    document.getElementById("divComputerChoiceRockPaperScissors").classList.add("invisible");
 }
 
+resetGame()
 document.getElementById("resetButtonRockPaperScissors").addEventListener("click", resetGame);
