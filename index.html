@@ -33,22 +33,28 @@
 
 <body>
 
+    <!-- <header class="sticky-top d-flex justify-content-between"> -->
     <header>
-        <h1>Ariel Xavier Manfredi</h1>
-        <b>Web Developer</b>
-        <div class="vr mx-1"></div>
-        <a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <div class="vr mx-1"></div>
-        <a href="https://discord.com/users/480883631754051584" target="_blank">
-            <i class="bi bi-discord"></i>
-        </a>
-        <div class="vr mx-1"></div>
-        <a href="https://github.com/ArielXavierManfredi" target="_blank">
-            <i class="bi bi-github"></i>
-        </a>
-        <div class="vr mx-1"></div>
+        <div>
+            <h1>Ariel Xavier Manfredi</h1>
+        </div>
+
+        <div>
+            <b>Web Developer</b>
+            <div class="vr mx-1"></div>
+            <a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <div class="vr mx-1"></div>
+            <a href="https://discord.com/users/480883631754051584" target="_blank">
+                <i class="bi bi-discord"></i>
+            </a>
+            <div class="vr mx-1"></div>
+            <a href="https://github.com/ArielXavierManfredi" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            <div class="vr mx-1"></div>
+        </div>
 
         <div class="d-flex justify-content-end">
             <div class="form-check form-switch">
@@ -58,6 +64,43 @@
             </div>
         </div>
     </header>
+    
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm rounded ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="--i: 0;">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" style="--i: 1;">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item" style="--i: 2;">
+                            <a class="nav-link" href="#graduation">Graduation</a>
+                        </li>
+                        <li class="nav-item" style="--i: 3;">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item" style="--i: 4;">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item" style="--i: 5;">
+                            <a class="nav-link" href="#minigames">Minigames</a>
+                        </li>
+                        <li class="nav-item" style="--i: 6;">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <section id="about">
         <h2>About Me</h2>
@@ -65,44 +108,45 @@
         <p>In my free time I like to play games, play the guitar, watch series and anime.</p>
     </section>
 
-    <section id="formation">
+    <section id="graduation">
         <h2>Graduation</h2>
         <p>
             <li>Higher Education: Information Technology Management - FATEC Catanduva - Catanduva/SP - Brazil</li>
         </p>
         <p>
-            <li>High School Integrated with Technician: Computer Technician - ETEC Elias Nechar - Catanduva/SP - Brazil</li>
+            <li>High School Integrated with Technician: Computer Technician - ETEC Elias Nechar - Catanduva/SP - Brazil
+            </li>
         </p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML <img src="/img/icon-html.png" alt="HTML Icon" class="icon"></li>
-            <li>CSS <img src="/img/icon-css.png" alt="CSS Icon" class="icon"></li>
-            <li>JavaScript <img src="/img/icon-js.png" alt="JavaScript Icon" class="icon"></li>
-            <li>Java <img src="/img/icon-java.png" alt="Java Icon" class="icon"></li>
-            <li>Spring Boot <img src="/img/icon-springboot.png" alt="Spring Boot Icon" class="icon"></li>
-            <li>TypeScript <img src="/img/icon-ts.png" alt="TypeScript Icon" class="icon"></li>
-            <li>Angular <img src="/img/icon-angular.png" alt="Angular Icon" class="icon"></li>
+            <li style="--i: 0;">HTML <img src="/img/icon-html.png" alt="HTML Icon" class="icon"></li>
+            <li style="--i: 1;">CSS <img src="/img/icon-css.png" alt="CSS Icon" class="icon"></li>
+            <li style="--i: 2;">JavaScript <img src="/img/icon-js.png" alt="JavaScript Icon" class="icon"></li>
+            <li style="--i: 3;">Java <img src="/img/icon-java.png" alt="Java Icon" class="icon"></li>
+            <li style="--i: 4;">Spring Boot <img src="/img/icon-springboot.png" alt="Spring Boot Icon" class="icon"></li>
+            <li style="--i: 5;">TypeScript <img src="/img/icon-ts.png" alt="TypeScript Icon" class="icon"></li>
+            <li style="--i: 6;">Angular <img src="/img/icon-angular.png" alt="Angular Icon" class="icon"></li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>
+            <li style="--i: 0;">
                 <a href="https://github.com/ArielXavierManfredi/User-REST-API" target="_blank">
                     User registration REST API with Java 17 and Spring Boot.
                 </a>
             </li>
-            <li>
+            <li style="--i: 1;">
                 <a href="https://github.com/ArielXavierManfredi/User-registration-app" target="_blank">
                     User registration web app with Java 17, Spring Boot, Spring Security, Thymeleaf and Bootstrap.
                 </a>
             </li>
-            <li>
-                More at my Github: 
+            <li style="--i: 2;">
+                More at my Github:
                 <a href="https://github.com/ArielXavierManfredi" target="_blank">
                     <i class="bi bi-github"></i>
                 </a>
@@ -218,27 +262,27 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>
-            <li>
+            <li style="--i: 0;">
                 Email: <b>ariel.xavier.manfredi@gmail.com</b>
                 <a href="mailto:ariel.xavier.manfredi@gmail.com"><i class="bi bi-envelope-fill"></i></a>
             </li>
         </p>
         <p>
-            <li>
+            <li style="--i: 1;">
                 <a href="https://www.linkedin.com/in/ariel-xavier-manfredi-503870218" target="_blank">
                     LinkedIn <i class="bi bi-linkedin"></i>
                 </a>
             </li>
         </p>
         <p>
-            <li>
+            <li style="--i: 2;">
                 <a href="https://discord.com/users/480883631754051584" target="_blank">
                     Discord <i class="bi bi-discord"></i>
                 </a>
             </li>
         </p>
         <p>
-            <li>
+            <li style="--i: 3;">
                 <a href="https://github.com/ArielXavierManfredi" target="_blank">
                     Github <i class="bi bi-github"></i>
                 </a>

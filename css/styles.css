@@ -9,6 +9,9 @@ body {
     --secondaryColorTextColor: #121212;
 
     --headerBgColor: #121212;
+
+    --navbar-bg-color: #ffffff;
+    --navbar-color: #121212;
 }
 
 body.dark-mode {
@@ -20,6 +23,14 @@ body.dark-mode {
     --highlightedColorTextColor: #ffffff;
     --secondaryColor: #292929;
     --secondaryColorTextColor: #ffffff;
+
+    --navbar-bg-color: #292929;
+    --navbar-color: #ffffff;
+
+    #toggleDarkMode{
+        background-color: #292929;
+        border-color: #ffffff;
+    }
 }
 
 * {
@@ -42,13 +53,9 @@ ul li {
 }
 
 /* Apply different delays to each li */
-ul li:nth-child(1) { animation-delay: 0s;}
-ul li:nth-child(2) { animation-delay: 0.5s;}
-ul li:nth-child(3) { animation-delay: 1.0s;}
-ul li:nth-child(4) { animation-delay: 1.5s;}
-ul li:nth-child(5) { animation-delay: 2s;}
-ul li:nth-child(6) { animation-delay: 2.5s;}
-ul li:nth-child(7) { animation-delay: 3s;}
+ul li {
+    animation-delay: calc(0.25s * (var(--i)));
+}
 
 ul li:hover {
     transform: translateX(10px);
@@ -63,7 +70,7 @@ header {
     background-color: var(--headerBgColor);
     color: #e0e1dd;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -80,6 +87,8 @@ section {
     box-shadow: 0px 3px 20px 3px rgba(61, 62, 69, 0.5);
     font-size: larger;
     border-radius: 10px;
+
+    scroll-margin-top: 70px; /* Ajuste o valor conforme a altura da navbar */
 }
 
 section:hover {
@@ -132,6 +141,21 @@ footer i {
 
 .bi-discord:hover {
     color: #535FEE;
+}
+
+
+/* Navbar CSS */
+nav{
+    background-color: var(--navbar-bg-color);
+
+    a.nav-link{
+        color: var(--navbar-color);
+    }
+
+    .navbar-toggler {
+        background-color: var(--navbar-color);
+    }
+
 }
 
 
