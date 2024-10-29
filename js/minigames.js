@@ -123,9 +123,9 @@ function getResults(userChoice){
 
 
 function resetGame() {
-    resultDisplay.innerHTML = "";
-    userChoiceDisplay.innerHTML = "";
-    computerChoiceDisplay.innerHTML = "";
+    if(resultDisplay) resultDisplay.innerHTML = "";
+    if(userChoiceDisplay) userChoiceDisplay.innerHTML = "";
+    if(computerChoiceDisplay) computerChoiceDisplay.innerHTML = "";
     document.getElementById("rockPaperScissorsBoard").classList.remove("invisible");
     document.getElementById("chooseOneRockPaperScissors").classList.remove("invisible");
     document.getElementById("divUserChoiceRockPaperScissors").classList.add("invisible");

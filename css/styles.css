@@ -31,6 +31,19 @@ body.dark-mode {
         background-color: #292929;
         border-color: #ffffff;
     }
+
+        
+    /* Navbar CSS */
+    nav{
+        .navbar-toggler {
+            background-color: var(--navbar-color);
+        }
+
+        .navbar-toggler-icon {
+            color: var(--navbar-bg-color);
+        }
+
+    }
 }
 
 * {
@@ -151,11 +164,6 @@ nav{
     a.nav-link{
         color: var(--navbar-color);
     }
-
-    .navbar-toggler {
-        background-color: var(--navbar-color);
-    }
-
 }
 
 
