@@ -54,6 +54,10 @@ a {
     text-decoration: none!important;
 }
 
+.navbarIcon{
+    height: 3.5rem;
+}
+
 #contact p:hover {
     font-weight: bold;
 }
@@ -101,7 +105,7 @@ section {
     font-size: larger;
     border-radius: 10px;
 
-    scroll-margin-top: 70px; /* Ajuste o valor conforme a altura da navbar */
+    scroll-margin-top: 130px; /* Ajuste o valor conforme a altura da navbar */
 }
 
 section:hover {
