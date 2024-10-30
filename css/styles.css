@@ -1,281 +1,277 @@
 body {
-    --sectionBgColor: #ffffff;
-    --sectionColor: #121212;
-    background-color: #ffffff !important;
+  --sectionBgColor: #ffffff;
+  --sectionColor: #121212;
+  background-color: #ffffff !important;
 
-    --highlightedColor: #292929;
-    --highlightedColorTextColor: #ffffff;
-    --secondaryColor: #ffffff;
-    --secondaryColorTextColor: #121212;
+  --highlightedColor: #292929;
+  --highlightedColorTextColor: #ffffff;
+  --secondaryColor: #ffffff;
+  --secondaryColorTextColor: #121212;
 
-    --headerBgColor: #121212;
+  --headerBgColor: #121212;
 
-    --navbar-bg-color: #ffffff;
-    --navbar-color: #121212;
+  --navbar-bg-color: #ffffff;
+  --navbar-color: #121212;
 }
 
 body.dark-mode {
-    --sectionBgColor: #121212;
-    --sectionColor: #ffffff;
-    background-color: #292929 !important;
+  --sectionBgColor: #121212;
+  --sectionColor: #ffffff;
+  background-color: #292929 !important;
 
-    --highlightedColor: #121212;
-    --highlightedColorTextColor: #ffffff;
-    --secondaryColor: #292929;
-    --secondaryColorTextColor: #ffffff;
+  --highlightedColor: #121212;
+  --highlightedColorTextColor: #ffffff;
+  --secondaryColor: #292929;
+  --secondaryColorTextColor: #ffffff;
 
-    --navbar-bg-color: #292929;
-    --navbar-color: #ffffff;
+  --navbar-bg-color: #292929;
+  --navbar-color: #ffffff;
+}
 
-    #toggleDarkMode{
-        background-color: #292929;
-        border-color: #ffffff;
-    }
+body.dark-mode #toggleDarkMode {
+  background-color: #292929;
+  border-color: #ffffff;
+}
 
-        
-    /* Navbar CSS */
-    nav{
-        .navbar-toggler {
-            background-color: var(--navbar-color);
-        }
+/* Navbar CSS */
+body.dark-mode nav .navbar-toggler {
+  background-color: var(--navbar-color);
+}
 
-        .navbar-toggler-icon {
-            color: var(--navbar-bg-color);
-        }
-
-    }
+body.dark-mode nav .navbar-toggler-icon {
+  color: var(--navbar-bg-color);
 }
 
 * {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
-    text-decoration: none!important;
+  text-decoration: none !important;
 }
 
-.navbarIcon{
-    height: 3.5rem;
+.navbarIcon {
+  height: 3.5rem;
 }
 
 #contact p:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ul li {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: opacity 0.3s, transform 0.3s;
-    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: opacity 0.3s, transform 0.3s;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 /* Apply different delays to each li */
 ul li {
-    animation-delay: calc(0.25s * (var(--i)));
+  animation-delay: calc(0.25s * (var(--i)));
 }
 
 ul li:hover {
-    transform: translateX(10px);
-    font-weight: bold;
+  transform: translateX(10px);
+  font-weight: bold;
 }
 
 .icon {
-    width: 1.7rem;
+  width: 1.7rem;
 }
 
 header {
-    background-color: var(--headerBgColor);
-    color: #e0e1dd;
-    text-align: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease-in-out;
+  background-color: var(--headerBgColor);
+  color: #e0e1dd;
+  text-align: center;
+  padding: 1rem;
+  animation: fadeIn 1s ease-in-out;
 }
 
 header i {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 section {
-    background-color: var(--sectionBgColor);
-    color: var(--sectionColor);
-    padding: 2rem;
-    margin: 2rem;
-    box-shadow: 0px 3px 20px 3px rgba(61, 62, 69, 0.5);
-    font-size: larger;
-    border-radius: 10px;
+  background-color: var(--sectionBgColor);
+  color: var(--sectionColor);
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 0px 3px 20px 3px rgba(61, 62, 69, 0.5);
+  font-size: larger;
+  border-radius: 10px;
 
-    scroll-margin-top: 130px; /* Ajuste o valor conforme a altura da navbar */
+  scroll-margin-top: 8rem; /* Ajuste o valor conforme a altura da navbar */
 }
 
 section:hover {
-    transform: scale(1.01);
-    color: var(--sectionColor);
+  transform: scale(1.01);
+  color: var(--sectionColor);
 }
 
 section a {
-    color: var(--sectionColor);
-    text-decoration: none;
+  color: var(--sectionColor);
+  text-decoration: none;
 }
 
 section a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 section a i {
-    text-decoration: none;
-    color: var(--sectionColor);
+  text-decoration: none;
+  color: var(--sectionColor);
 }
 
 footer {
-    bottom: 0;
-    color: var(--sectionColor);
+  bottom: 0;
+  color: var(--sectionColor);
 }
 
 footer i {
-    text-decoration: none;
-    color: var(--sectionColor);
+  text-decoration: none;
+  color: var(--sectionColor);
 }
 
 .accordion-button {
-    background-color: var(--highlightedColor) !important;
-    color: var(--highlightedColorTextColor) !important;
+  background-color: var(--highlightedColor) !important;
+  color: var(--highlightedColorTextColor) !important;
 }
 
 .accordion-body {
-    background-color: var(--secondaryColor);
-    color: var(--secondaryColorTextColor);
+  background-color: var(--secondaryColor);
+  color: var(--secondaryColorTextColor);
 }
 
 /* Social Media Icons Hover efx */
 .bi-linkedin:hover {
-    color: #0A66C2;
+  color: #0a66c2;
 }
 
 .bi-github:hover {
-    color: #E6EDF3;
+  color: #e6edf3;
 }
 
 .bi-discord:hover {
-    color: #535FEE;
+  color: #535fee;
 }
-
 
 /* Navbar CSS */
-nav{
-    background-color: var(--navbar-bg-color);
-
-    a.nav-link{
-        color: var(--navbar-color);
-    }
+nav {
+  background-color: var(--navbar-bg-color);
 }
 
-
+nav a.nav-link {
+  color: var(--navbar-color);
+}
 
 /* MEDIA QUERIES FOR RESPONSIVENESS: */
 
 @media (max-width: 768px) {
-    header {
-        padding: 1rem;
-    }
+  header {
+    padding: 1rem;
+  }
 
-    section {
-        padding: 1rem;
-        margin: 1rem;
-        font-size: medium;
-    }
+  section {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: medium;
+  }
 
-    ul li {
-        font-size: small;
-    }
+  ul li {
+    font-size: small;
+  }
 
-    .icon {
-        width: 1.2rem;
-    }
+  .icon {
+    width: 1.2rem;
+  }
 
-    #contact p:hover {
-        font-weight: normal;
-    }
+  #contact p:hover {
+    font-weight: normal;
+  }
 
-    footer {
-        font-size: small;
-    }
+  footer {
+    font-size: small;
+  }
+
+  section {
+    scroll-margin-top: 23rem; /* Ajuste o valor conforme a altura da navbar */
+  }
 }
-
 
 /* ANIMATIONS: */
 
 @keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
 
-    40% {
-        opacity: 0.6;
-    }
+  40% {
+    opacity: 0.6;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Keyframes for fadeIn animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Keyframes for bounceInRight animation */
 @keyframes bounceInRight {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 1;
-        /* transform: translateX(48px); */
-        right: 0;
-    }
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    /* transform: translateX(48px); */
+    right: 0;
+  }
 
-    24% {
-        opacity: 1;
-    }
+  24% {
+    opacity: 1;
+  }
 
-    40% {
-        animation-timing-function: ease-in;
-        transform: translateX(26px);
-    }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
 
-    65% {
-        animation-timing-function: ease-in;
-        transform: translateX(13px);
-    }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
 
-    82% {
-        animation-timing-function: ease-in;
-        transform: translateX(6.5px);
-    }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
 
-    93% {
-        animation-timing-function: ease-in;
-        transform: translateX(4px);
-    }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
 
-    25%,
-    55%,
-    75%,
-    87%,
-    98% {
-        animation-timing-function: ease-out;
-        transform: translateX(0px);
-    }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
 
-    100% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
