@@ -13,12 +13,12 @@ function getResults(userChoice){
 
     // Create and append new image for computer choice
     const userChoiceImg = document.createElement('img');
-    userChoiceImg.setAttribute('src', "/img/" + userChoice + ".png");
+    userChoiceImg.setAttribute('src', "/img/rock-paper-scissors/" + userChoice + ".png");
     userChoiceDisplay.appendChild(userChoiceImg);
 
     // Create and append new image for computer choice
     const computerChoiceImg = document.createElement('img');
-    computerChoiceImg.setAttribute('src', "/img/" + computerChoice + ".png");
+    computerChoiceImg.setAttribute('src', "/img/rock-paper-scissors/" + computerChoice + ".png");
     computerChoiceDisplay.appendChild(computerChoiceImg);
 
     switch (userChoice + computerChoice) {
